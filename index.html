@@ -5,42 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Left Hand Calculator</title>
+    <title>Document</title>
   </head>
   <body>
-      <!--Calculator-->
-      <div class="calculator">
-          <input type="text" class="screen" disabled>
-          <!-- <input type="hidden" id="num1">
-          <input type="hidden" id="num2"> -->
-            <div class="row">
-              <button class="button add" value="+">+</button>
-              <button class="button subtract" value="-">-</button>
-              <button class="button multiply" value="*">*</button>
-              <button class="button divide" value="/">/</button>
+    <div class="calculator">
+        <div class="keys">
+            <div class="display">
+              <div class="current-num"></div>
             </div>
             <div class="row">
-              <button class="button equal" value="=">=</button>
-              <button class="button number" value="7">7</button>
-              <button class="button number" value="8">8</button>
-              <button class="button number" value="9">9</button>
+                <button class="operator" data-action="add">+</button>
+                <button class="operator" data-action="subtract">-</button>
+                <button class="operator" data-action="multiply">*</button>
+                <button class="operator" data-action="divide">/</button>
             </div>
             <div class="row">
-              <button class="button clear" value="C">C</button>
-              <button class="button number" value="4">4</button>
-              <button class="button number" value="5">5</button>
-              <button class="button number" value="6">6</button>
+                <button data-action="calculate">=</button>
+                <button data-action="number">7</button>
+                <button data-action="number">8</button>
+                <button data-action="number">9</button>
             </div>
-            <div class="row">
-              <button class="button number" value="0">0</button>
-              <button class="button number" value="1">1</button>
-              <button class="button number" value="2">2</button>
-              <button class="button number" value="3">3</button>
+            <div class="row">                
+                <button data-action="clear">C</button>
+                <button data-action="number">4</button>
+                <button data-action="number">5</button>
+                <button data-action="number">6</button>
+            </div>
+            <div class="row">                
+                <button data-action="number">0</button>
+                <button data-action="number">1</button>
+                <button data-action="number">2</button>
+                <button data-action="number">3</button>
             </div>
         </div>
-      </div>
-    <script src="./scripts.js"></script>
-  </body>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
-
-</div>
