@@ -10,8 +10,8 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-image: url(./images/photo-1612416364638-753a3834455c.webp);
-  background-size: cover;
+  background-image: url(./images/wallpaper.webp);
+  background-size: 616px;
   overflow: hidden;
 }
 
@@ -20,10 +20,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30vw;
-  height: 60vh;
+  width: 25vw;
+  height: 50vh;
   padding: 5%;
-  background: rgb(196, 93, 46);
+  background: rgb(247, 144, 97);
   border-radius: 10px;
 }
 
@@ -64,5 +64,17 @@ button:hover {
   .calculator {
     width: 35vw;
     height: 40vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .calculator {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  button {
+    width: 10vw;
+    height: 10vw;
   }
 }
